@@ -6,7 +6,7 @@
    * or hexadecimal form.
    * 
    * <code>
-   * &lt;?   
+   * <?   
    *    
    * $encryption = new expalasEncryption();
    * 
@@ -15,7 +15,7 @@
    * // Decrypt text
    * $decrypted_text = $encryption->decrypt($encrypted_text); 
    *    
-   * ?&gt;   
+   * ?>
    * </code>           
    *    
    * @copyright  Copyright (c) 2013, Björn Ebbrecht

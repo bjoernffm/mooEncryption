@@ -6,7 +6,7 @@
    * or hexadecimal form.
    * 
    * <code>
-   * $encryption = new expalasEncryption();
+   * $encryption = new mooEncryption();
    * 
    * // Encrypt text
    * $encrypted_text = $encryption->encrypt('this text is unencrypted');
@@ -14,12 +14,12 @@
    * $decrypted_text = $encryption->decrypt($encrypted_text); 
    * </code>           
    *    
-   * @copyright  Copyright (c) 2013, Björn Ebbrecht
-   * @author Björn Ebbrecht <ebbrecht@expalas.de>
-   * @package expalasEncryption
-   * @version 1.0 
+   * @copyright Copyright (c) 2013, Björn Ebbrecht
+   * @author Björn Ebbrecht <bjoern.ebbrecht@gmail.com>
+   * @package mooEncryption
+   * @version 1.1 
    */                 
-  class expalasEncryption {
+  class mooEncryption {
   
     /**
      * The encryption/decryption algorithm.

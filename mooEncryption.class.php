@@ -6,16 +6,12 @@
    * or hexadecimal form.
    * 
    * <code>
-   * <?   
-   *    
    * $encryption = new expalasEncryption();
    * 
    * // Encrypt text
    * $encrypted_text = $encryption->encrypt('this text is unencrypted');
    * // Decrypt text
    * $decrypted_text = $encryption->decrypt($encrypted_text); 
-   *    
-   * ?>
    * </code>           
    *    
    * @copyright  Copyright (c) 2013, Björn Ebbrecht

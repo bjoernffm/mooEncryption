@@ -47,7 +47,7 @@
      * @param bool $hex optional returns the encrypted data in hexadecimal form
      * @return string the encrypted data
      */                                  
-    public function encrypt($string, $hex = true) {
+    public function encrypt($string, $raw_output = false) {
     
       /**
        * Initializing the mcrypt module.
@@ -78,7 +78,7 @@
       /**
        * Returning the encrypted data either in a binary or hexadecimal way
        */             
-      if ($hex === true) {
+      if ($raw_output === false) {
         $return = bin2hex($iv.$crypttext);
       } else {
         $return = $iv.$crypttext;
@@ -96,12 +96,12 @@
      * @param bool $hex optional expects binary data, if true hexadecimal
      * @return (string|bool) decrypted version of the encrypted string or false
      */                                 
-    public function decrypt($string, $hex = true) {
+    public function decrypt($string, $raw_input = false) {
     
       /**
        * Converting the given string from hex to bin if needed.
        */             
-      if ($hex === true) {
+      if ($raw_input === false) {
         $string = pack("H*" , $string);
       }
       
